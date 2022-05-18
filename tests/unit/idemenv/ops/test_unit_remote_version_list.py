@@ -11,7 +11,7 @@ async def test_unit_remote_version_list_valid_response(mock_hub, hub):
     # This is because many values are not necessary from a testing perspective.
     mock_hub.exec.request.raw.get.return_value = {
         "result": True,
-        "ret": b'''
+        "ret": b"""
         <html><body><pre>
             <a href="../">../</a>
             <a href="latest/">latest/</a>
@@ -24,7 +24,7 @@ async def test_unit_remote_version_list_valid_response(mock_hub, hub):
             <a href="v18.6.1/">v18.6.1/</a>
             <a href="v18.7.0/">v18.7.0/</a>
         </pre></body></html>
-        ''',
+        """,
         "comment": "OK",
         "ref": "exec.request.raw.get",
         "status": 200,

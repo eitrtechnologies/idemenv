@@ -22,7 +22,9 @@ async def test_unit_fill_local_version_list(mock_hub, hub):
     # Now set the mocked return value to contain an element. This dictionary
     # with one element will be returned by local_version_list and stored
     # within the LOCAL_VERSIONS dict
-    mock_hub.idemenv.ops.local_version_list.return_value = {"v18.4.2": Path("mocked/path/idem-v18.4.2")}
+    mock_hub.idemenv.ops.local_version_list.return_value = {
+        "v18.4.2": Path("mocked/path/idem-v18.4.2")
+    }
 
     # Call fill_local_version_list to populate the LOCAL_VERSIONS dict
     await mock_hub.idemenv.ops.fill_local_version_list()
