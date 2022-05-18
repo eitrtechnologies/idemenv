@@ -4,25 +4,75 @@
 #
 #    pip-compile --output-file=requirements/py3.10/tests.txt requirements/tests.in
 #
+acct==6.5.1
+    # via
+    #   idem
+    #   pop-evbus
+aiodns==3.0.0
+    # via aiohttp
 aiofiles==0.8.0
-    # via dict-toolbox
+    # via
+    #   acct
+    #   dict-toolbox
+    #   idem
+    #   pop-tree
+aiohttp[speedups]==3.8.1
+    # via idem-aiohttp
+aiosignal==1.2.0
+    # via aiohttp
+async-timeout==4.0.2
+    # via aiohttp
 asynctest==0.13.0
     # via
     #   -r requirements/tests.in
     #   pytest-pop
 attrs==21.4.0
-    # via pytest
+    # via
+    #   aiohttp
+    #   pytest
+beautifulsoup4==4.11.1
+    # via bs4
+brotli==1.0.9
+    # via aiohttp
+bs4==0.0.1
+    # via -r requirements/base.txt
+cchardet==2.1.7
+    # via aiohttp
+cffi==1.15.0
+    # via
+    #   cryptography
+    #   pycares
+charset-normalizer==2.0.12
+    # via aiohttp
 colored==1.4.3
     # via rend
+cryptography==37.0.2
+    # via acct
 dict-toolbox==2.2.0
     # via
+    #   acct
+    #   idem
     #   pop
     #   pop-config
     #   rend
+frozenlist==1.3.0
+    # via
+    #   aiohttp
+    #   aiosignal
+idem-aiohttp==3.0.0
+    # via -r requirements/base.txt
+idem==18.7.0
+    # via idem-aiohttp
+idna==3.3
+    # via yarl
 iniconfig==1.1.1
     # via pytest
 jinja2==3.0.3
-    # via rend
+    # via
+    #   idem
+    #   rend
+jmespath==1.0.0
+    # via idem
 markupsafe==2.1.1
     # via jinja2
 mock==4.0.3
@@ -30,7 +80,15 @@ mock==4.0.3
     #   -r requirements/tests.in
     #   pytest-pop
 msgpack==1.0.3
-    # via dict-toolbox
+    # via
+    #   acct
+    #   dict-toolbox
+    #   pop-evbus
+    #   pop-serial
+multidict==6.0.2
+    # via
+    #   aiohttp
+    #   yarl
 nest-asyncio==1.5.4
     # via
     #   pop-loop
@@ -40,20 +98,45 @@ packaging==21.3
 pluggy==1.0.0
     # via pytest
 pop-config==9.0.0
-    # via pop
+    # via
+    #   acct
+    #   idem
+    #   idem-aiohttp
+    #   pop
+pop-evbus==6.1.1
+    # via idem
 pop-loop==1.0.4
-    # via pop
+    # via
+    #   idem
+    #   idem-aiohttp
+    #   pop
+pop-serial==1.1.0
+    # via
+    #   idem
+    #   pop-evbus
+pop-tree==9.2.0
+    # via idem
 pop==21.0.1
     # via
     #   -r requirements/base.txt
+    #   acct
+    #   idem
+    #   idem-aiohttp
     #   pop-config
+    #   pop-evbus
     #   pop-loop
+    #   pop-serial
+    #   pop-tree
     #   pytest-pop
     #   rend
 proxy-tools==0.1.0
     # via pop
 py==1.11.0
     # via pytest
+pycares==4.1.2
+    # via aiodns
+pycparser==2.21
+    # via cffi
 pyparsing==3.0.7
     # via packaging
 pytest-async==0.1.1
@@ -71,14 +154,32 @@ pytest==7.1.1
     #   pytest-pop
 pyyaml==6.0
     # via
+    #   acct
     #   dict-toolbox
+    #   idem
     #   pop
     #   rend
-rend==6.4.0
-    # via pop-config
+rend==6.4.2
+    # via
+    #   acct
+    #   idem
+    #   idem-aiohttp
+    #   pop-config
+    #   pop-evbus
+    #   pop-tree
 sniffio==1.2.0
     # via pop-loop
+soupsieve==2.3.2.post1
+    # via beautifulsoup4
 toml==0.10.2
-    # via rend
+    # via
+    #   idem
+    #   rend
 tomli==2.0.1
     # via pytest
+tqdm==4.64.0
+    # via idem
+wheel==0.37.1
+    # via idem
+yarl==1.7.2
+    # via aiohttp

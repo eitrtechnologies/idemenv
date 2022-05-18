@@ -98,7 +98,7 @@ Usage
                            Load extra options from a configuration file onto hub.OPT.idemenv
      --config-template     Output a config template for this command
      --repo-url REPO_URL, -r REPO_URL
-                           Salt single binary repository location. Version directories are expected here.
+                           Idem single binary repository location. Version directories are expected here.
      --idemenv-dir IDEMENV_DIR, -d IDEMENV_DIR
                            Working directory for idemenv downloads
      --version             Display version information
@@ -162,11 +162,11 @@ Basic idem binary setup:
    $ idemenv init
    Add the idemenv bin directory to your PATH:
 
-       echo 'export PATH="$PATH:/home/nmhughes/.idemenv/bin"' >> ~/.bashrc
+       echo 'export PATH="$HOME/.idemenv/bin:$PATH"' >> ~/.bashrc
    OR:
-       echo 'export PATH="$PATH:/home/nmhughes/.idemenv/bin"' >> ~/.zshrc
+       echo 'export PATH="$HOME/.idemenv/bin:$PATH"' >> ~/.zshrc
 
-   $ echo 'export PATH="$PATH:/home/nmhughes/.idemenv/bin"' >> ~/.zshrc
+   $ echo 'export PATH="$HOME/.idemenv/bin:$PATH"' >> ~/.zshrc
    $ source ~/.zshrc
 
 

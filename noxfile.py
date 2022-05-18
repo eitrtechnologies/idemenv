@@ -153,7 +153,7 @@ def tests(session):
             # Sometimes some of the coverage files are corrupt which would
             # trigger a CommandFailed exception
             pass
-        # Generate report for salt code coverage
+        # Generate report for code coverage
         session.run(
             "coverage",
             "xml",
