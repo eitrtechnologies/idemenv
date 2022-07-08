@@ -4,6 +4,15 @@ This project uses [Semantic Versioning](https://semver.org/) - MAJOR.MINOR.PATCH
 
 # Changelog
 
+Idemenv 0.2.0 (2022-07-07)
+==========================
+
+Fixed
+-----
+
+- swap idem-aiohttp for pop-aiohttp (#1)
+
+
 Idemenv 0.1.0 (2022-05-18)
 ==========================
 
