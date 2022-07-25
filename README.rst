@@ -132,10 +132,20 @@ Basic idem binary setup:
    # List remote versions
 
    $ idemenv list-remote
-   3004rc1
-   3004
-   3003.3
-   3003
+   v18.9.0
+   v18.8.1
+   v18.8.0
+   v18.7.1
+   v18.7.0
+   v18.6.1
+   v18.5.0
+   v18.4.2
+   v18.4.1
+   v18.4.0
+   v18.10.3
+   v18.10.2
+   v18.10.1
+   v18.10.0
 
 
    # Install latest version
@@ -152,9 +162,15 @@ Basic idem binary setup:
    # List local versions
 
    $ idemenv list
-   * 3004 set by /home/nmhughes/.idemenv/version
-     3003.3
-     3003
+   * latest (set by /home/nmhughes/.idemenv/version)
+      v18.10.3
+      v18.10.2
+      v18.10.1
+      v18.10.0
+      v18.9.0
+
+
+
 
 
    # Initialize the idemenv environment, which will point to the idem binaries
@@ -174,7 +190,7 @@ Basic idem binary setup:
 
    $ idem exec test.version
    local:
-       3004
+       v18.10.3
 
 
 Common Issues
