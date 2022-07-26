@@ -75,9 +75,14 @@ Install from source
    cd idemenv
 
    # Setup venv
-   python3 -m venv .venv --prompt idemenv
-   source .venv/bin/activate
-   pip install -e .
+   | linux & macos                          | windows *                              |
+   |:--------------------------------------:|:--------------------------------------:|
+   | python3 -m venv .venv --prompt idemenv | python3 -m venv .venv --prompt idemenv |
+   | source .venv/bin/activate.             | . .\.venv\Scripts\activate             |
+   | pip install -e .                       | pip install -e .                       |
+   
+   * Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": 
+   https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
 Usage
 =====
