@@ -188,8 +188,9 @@ Basic idem binary setup:
 
    # Kick the tires!
 
-   $ idem exec test.ping
-   True
+   $ idem exec test.version
+   local:
+       3004
 
 
 Common Issues
