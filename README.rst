@@ -162,12 +162,12 @@ Basic idem binary setup:
    # List local versions
 
    $ idemenv list
-   * latest (set by /home/nmhughes/.idemenv/version)
-      v18.10.3
-      v18.10.2
-      v18.10.1
-      v18.10.0
-      v18.9.0
+   #* latest (set by /home/nmhughes/.idemenv/version)
+       v18.10.3
+       v18.10.2
+       v18.10.1
+       v18.10.0
+       v18.9.0
 
 
 
