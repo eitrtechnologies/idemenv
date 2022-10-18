@@ -45,7 +45,7 @@ repos:
       - id: remove-import-headers
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.23.0
+    rev: v2.38.4
     hooks:
       - id: pyupgrade
         name: Rewrite Code to be Py3.7+
@@ -91,6 +91,7 @@ repos:
           - -v
           - --py-version=3.7
           - --platform=linux
+          - --no-emit-index-url
           - requirements/tests.in
 
       - id: pip-tools-compile
@@ -102,6 +103,7 @@ repos:
           - -v
           - --py-version=3.8
           - --platform=linux
+          - --no-emit-index-url
           - requirements/tests.in
 
       - id: pip-tools-compile
@@ -113,6 +115,7 @@ repos:
           - -v
           - --py-version=3.9
           - --platform=linux
+          - --no-emit-index-url
           - requirements/tests.in
 
       - id: pip-tools-compile
@@ -124,6 +127,7 @@ repos:
           - -v
           - --py-version=3.10
           - --platform=linux
+          - --no-emit-index-url
           - requirements/tests.in
 
   # <---- Testing Static Requirements -------------------------------------------------------------------------------------
